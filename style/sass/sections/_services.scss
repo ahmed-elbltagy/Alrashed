@@ -1,0 +1,100 @@
+@use'../base/all'as*;
+
+.services {
+  padding:$main-padding;
+  background-color: $background-color;
+}
+
+.services__content {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  place-items: center;
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+
+// start services img
+.services__img{
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background:$overlay-color;
+    transition:all .8s ease;
+    -webkit-transition:all .8s ease;
+    -moz-transition:all .8s ease;
+    -ms-transition:all .8s ease;
+    -o-transition:all .8s ease;
+}
+}
+// end services img
+
+// start services card
+.services__card {
+  border-radius: $size-radius $size-radius 0  0;
+  overflow: hidden;
+  box-shadow: $main-shadow;
+  & img{
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    display: block;
+    border-radius: $size-radius $size-radius 0  0;
+    -webkit-border-radius: $size-radius $size-radius 0  0;
+    -moz-border-radius: $size-radius $size-radius 0  0;
+    -ms-border-radius: $size-radius $size-radius 0  0;
+    -o-border-radius: $size-radius $size-radius 0  0;
+    transition:all 1s ease;
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -ms-transition:all 1s ease;
+    -o-transition:all 1s ease;
+}
+  &:hover img{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+  &:hover .services__img::after{
+    opacity: 1;
+}
+}
+// End services card
+
+// start services data
+.services__data {
+  min-height: 150px;
+  max-height: 180px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0px 0px $size-radius $size-radius;
+  -webkit-border-radius: 0px 0px $size-radius $size-radius;
+  -moz-border-radius: 0px 0px $size-radius $size-radius;
+  -ms-border-radius: 0px 0px $size-radius $size-radius;
+  -o-border-radius: 0px 0px $size-radius $size-radius;
+}
+.services__title{
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: $head-color;
+  }
+.services__text{
+  text-wrap:pretty;
+  text-transform:lowercase;
+  color: $text-color;
+  line-height:$main-light-height;
+  font-size: 1rem;
+  }
+// End services data

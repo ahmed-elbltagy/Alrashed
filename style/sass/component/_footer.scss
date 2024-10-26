@@ -1,0 +1,194 @@
+@use'../base/all'as*;
+
+.footer {
+  padding-top:70px;
+  background-color: $primary-color;
+  overflow: hidden;
+}
+
+// Start content
+.footer__content{
+  margin-bottom: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-content: center;
+  gap: 25px;
+  @media(max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+  & h3{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 5px;;
+  }
+}
+
+// Start logo
+.footer__logo{
+  grid-column: span 2;
+  @media(max-width: 1200px) {
+    grid-column: span 1;
+  }
+  & img{
+    margin-top: -10px;
+    width: 160px;
+    height: 45px;
+    margin-bottom: 5px;
+    @media(max-width: 500px) {
+      width: 120px;
+      height: 32px;
+    }
+  }
+  p{
+    width: 85%;
+    font-size: .9rem;
+    color: $text-color;
+    color:$footer-text-color;
+    line-height: $main-light-height;
+    margin-bottom: 25px;
+    @media(max-width: 500px) {
+      width: 100%;
+    }
+  }
+  // Start certificates
+  .footer__certificates{
+    & img{
+      object-fit: cover;
+      margin-right: 5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+  }
+  }
+}
+// End logo
+
+// Start links
+.footer__link{
+  display: flex;
+  flex-direction:column;
+  gap: 5px;
+  & a{
+    width: fit-content;
+    font-size: 1rem;
+    color: $text-color;
+    color:$footer-text-color;
+    line-height: $main-light-height;
+    transition: $time-transition;
+    -webkit-transition: $time-transition;
+    -moz-transition: $time-transition;
+    -ms-transition: $time-transition;
+    -o-transition: $time-transition;
+    &:hover{
+      color:$secondary-color;
+    }
+    
+}
+}
+// End links
+
+// Start services
+.footer__services{
+  display: flex;
+  flex-direction:column;
+  gap: 5px;
+  & span{
+    width: fit-content;
+    font-size: 1rem;
+    color: $text-color;
+    color:$footer-text-color;
+    line-height: $main-light-height;
+}
+}
+// End services
+
+// Start media
+.footer__media{
+  display: flex;
+  flex-direction:column;
+  & p{
+    margin-top: 4px;
+    width: fit-content;
+    font-size: 1rem;
+    color: $text-color;
+    color:$footer-text-color;
+    line-height: $main-light-height;
+    margin-bottom: 20px;
+  }
+  .footer__icon{
+    display: flex;
+    gap: 10px;
+    transition: $time-transition;
+    -webkit-transition: $time-transition;
+    -moz-transition: $time-transition;
+    -ms-transition: $time-transition;
+    -o-transition: $time-transition;
+    margin-bottom: 10px;
+    & a{
+      border:.5px solid #ffffff;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      &:hover{
+        background-color:$hover-color;
+}
+  }
+  }
+  & img{
+    display: block;
+    width: 17px;
+    height:17px;
+    padding: 1px 0px;
+    filter: invert(99%) sepia(6%) saturate(236%) hue-rotate(213deg) brightness(115%) contrast(100%);
+    -webkit-filter: invert(99%) sepia(6%) saturate(236%) hue-rotate(213deg) brightness(115%) contrast(100%);
+}
+}
+// End media
+
+// Start copyright
+.footer__copyright{
+  background-color: $hover-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  padding:15px 20px;
+  & p{
+    z-index: 2;
+    color:$footer-text-color;
+    color:$footer-text-color;
+    font-size: 1rem;
+    line-height: $main-light-height;
+    & a{
+      color: #fff;
+      font-weight: 500;
+      &:hover{
+        color: $secondary-color;
+      }
+    }
+  }
+}
+// End copyright

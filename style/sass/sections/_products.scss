@@ -1,0 +1,116 @@
+@use'../base/all'as*;
+
+.products {
+  padding:$main-padding;
+  position: relative;
+}
+
+// Start products swiper
+.products__swiper {
+  width: 100%;
+  height: 400px;
+  margin-top: -69px;
+  overflow: hidden;
+}
+
+.products__swiper-slide{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::before{
+    content: attr(data-product);
+    transition:$time-transition;
+    background-color: $background-color;
+    border-radius: $size-radius;
+    text-align: center;
+    opacity: 0;
+    bottom: 1px;
+    left: 50%;
+    padding: 15px;
+    width: 113%;
+    position: absolute;
+    transform: translateX( -50%);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    -webkit-transform: translateX( -50%);
+    -moz-transform: translateX( -50%);
+    -ms-transform: translateX( -50%);
+    -o-transform: translateX( -50%);
+    -webkit-border-radius: $size-radius;
+    -moz-border-radius: $size-radius;
+    -ms-border-radius: $size-radius;
+    -o-border-radius: $size-radius;
+    -webkit-transition:$time-transition;
+    -moz-transition:$time-transition;
+    -ms-transition:$time-transition;
+    -o-transition:$time-transition;
+}
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    border-radius:$size-radius;
+    -webkit-border-radius:$size-radius;
+    -moz-border-radius:$size-radius;
+    -ms-border-radius:$size-radius;
+    -o-border-radius:$size-radius;
+    transform: scale(0.9);
+    opacity: 0.5;
+    cursor: pointer;
+}
+&.swiper-slide-active {
+  &::before{
+    color: $head-color;
+    opacity: 1;
+  }
+  img {
+    opacity: 1;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+}
+}
+
+.products__button-prev,
+.products__button-next{
+  transition: $time-transition;
+  color:$primary-color;
+  -webkit-transition: $time-transition;
+  -moz-transition: $time-transition;
+  -ms-transition: $time-transition;
+  -o-transition: $time-transition;
+  @media(max-width: 1000px) {
+    display: none;
+  }
+
+  &:hover {
+    color:$hover-color;
+  }
+
+  &::after {
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+.products__button-next{
+  margin-right: 15px;
+}
+.products__button-prev{
+  margin-left: 15px;
+}
+
+.product__button{
+  @include flex-column;
+  margin-top: 35px;
+}
+// End products swiper

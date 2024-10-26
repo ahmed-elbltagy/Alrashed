@@ -1,0 +1,77 @@
+@use'../base/all'as*;
+
+// Start FAQ
+.faq__content {
+  padding: $main-padding;
+  .section__title{
+    text-align: center;
+    & p{
+      text-wrap:balance;
+      line-height: 30px;
+      padding: 5px;
+    }
+}}
+
+// Start FAQ item
+.faq__item {
+  margin-bottom: 30px;
+  border: 1.2px solid #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+// End FAQ item
+
+// Start FAQ question
+.faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color:$background-color;
+  cursor: pointer;
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: $main-light-height;
+  }
+}
+.toggle__btn {
+  transition: .5s;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: $primary-color;
+  transition: transform 0.5s, content 0.5s;
+  &:hover {
+    color: $hover-color;
+}
+}
+// End FAQ question
+
+// Start FAQ answer
+.faq__answer {
+  transition: .5s;
+  padding: 0 15px;
+  height:0px;
+  overflow: hidden;
+  transition: $time-transition;
+  -webkit-transition: $time-transition;
+  -moz-transition: $time-transition;
+  -ms-transition: $time-transition;
+  -o-transition: $time-transition;
+  & p{
+    font-size: 1rem;
+    margin: 0;
+    padding: 17px 0;
+    line-height: $main-light-height;
+  }
+}
+
+.faq__answer-active {
+  height: 100px;
+  @media(max-width: 767px) {
+    height: 270px;
+}
+}
+// End FAQ answer

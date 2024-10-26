@@ -1,0 +1,79 @@
+{
+  "products": [
+    {
+      "name": "Orange",
+      "img": "/assets/imges/products/page/fruits/orange/1.webp",
+      "category": "fruits"
+    },
+    {
+      "name": "Bell Pepper",
+      "img": "/assets/imges/products/page/vegetables/pepper/1.webp",
+      "category": "vegetables"
+    },
+    {
+      "name": "Mango",
+      "img": "/assets/imges/products/page/fruits/mango/1.webp",
+      "category": "fruits"
+    },
+    {
+      "name": "Strawberry",
+      "img": "/assets/imges/products/page/fruits/strawberry/1.webp",
+      "category": "fruits"
+    },
+    {
+      "name": "Potato",
+      "img": "/assets/imges/products/page/vegetables/potatoes/1.webp",
+      "category": "vegetables"
+    },
+    {
+      "name": "Iceberg Lettuce",
+      "img": "/assets/imges/products/page/vegetables/lettuce/1.webp",
+      "category": "vegetables"
+    },
+    {
+      "name": "Pomegranate",
+      "img": "/assets/imges/products/page/fruits/pomegranate/1.webp",
+      "category": "fruits"
+    },
+    {
+      "name": "Grapes",
+      "img": "/assets/imges/products/page/fruits/grape/1.webp",
+      "category": "fruits"
+    },
+    {
+      "name": "Grapefruit",
+      "img": "/assets/imges/products/page/fruits/grapefruit/1.webp",
+      "category": "fruits"
+    },
+    {
+      "name": "Lemon",
+      "img": "/assets/imges/products/page/fruits/lemon/1.webp",
+      "category": "fruits"
+    },
+    {
+      "name": "Guava",
+      "img": "/assets/imges/products/page/fruits/guava/1.webp",
+      "category": "fruits"
+    },
+    {
+      "name": "Tangerine",
+      "img": "/assets/imges/products/page/fruits/tangerine/1.webp",
+      "category": "fruits"
+    },
+    {
+      "name": "Onion",
+      "img": "/assets/imges/products/page/vegetables/onions/1.webp",
+      "category": "vegetables"
+    },
+    {
+      "name": "Cucumber",
+      "img": "/assets/imges/products/page/vegetables/cucumber/1.webp",
+      "category": "vegetables"
+    },
+    {
+      "name": "Tomato",
+      "img": "/assets/imges/products/page/vegetables/tomatoes/1.webp",
+      "category": "vegetables"
+    }
+  ]
+}
