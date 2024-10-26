@@ -22,3 +22,4 @@ Created on: October 2024
 ![App Screenshot](https://raw.githubusercontent.com/ahmed-elbltagy/Alrashed/refs/heads/main/assets/imges/268_1x_shots_so.png)
 ![App Screenshot](https://raw.githubusercontent.com/ahmed-elbltagy/Alrashed/refs/heads/main/assets/imges/473_1x_shots_so.png)
 
+Note: All the photos used in this template are intended only to illustrate the template and all the rights on them belong to their legal owners.
