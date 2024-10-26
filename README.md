@@ -17,7 +17,8 @@ Created on: October 2024
 
 <a href="https://alrashedexport.com" target="_blank">Live Preview</a>
 
-Note: All the photos used in this template are intended only to illustrate the template and all the rights on them belong to their legal owners.
+<strong>Note:</strong> All the photos used in this template are intended only to illustrate the template and all the rights on them belong to their legal owners.
+
 ## Mockups
 ![App Screenshot](https://raw.githubusercontent.com/ahmed-elbltagy/Alrashed/refs/heads/main/assets/imges/1.png)
 ![App Screenshot](https://raw.githubusercontent.com/ahmed-elbltagy/Alrashed/refs/heads/main/assets/imges/2.png)
